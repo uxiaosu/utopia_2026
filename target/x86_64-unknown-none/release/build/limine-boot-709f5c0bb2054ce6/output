@@ -1,0 +1,2 @@
+cargo:rustc-link-arg=-TC:\Users\22877\Documents\GitHub\limine-rust-template\limine-boot\linker.ld
+cargo:rerun-if-changed=linker.ld

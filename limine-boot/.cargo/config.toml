@@ -1,0 +1,8 @@
+[target.x86_64-unknown-none]
+rustflags = [
+    "-C", "relocation-model=static",
+    "-C", "link-arg=-no-pie"
+]
+
+[build]
+target = "x86_64-unknown-none"

@@ -1,0 +1,18 @@
+[package]
+name = "limine-boot"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "limine-kernel"
+path = "src/main.rs"
+
+[dependencies]
+kernel-core = { path = "../kernel-core" }
+limine = "0.5"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
